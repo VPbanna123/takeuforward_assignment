@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:
+    'Avenir Next',
+    'Segoe UI',
+    'Noto Sans',
+    sans-serif;
+}
+
+@layer utilities {
+  .hero-cut {
+    clip-path: polygon(0 58%, 25% 86%, 50% 58%, 74% 84%, 100% 56%, 100% 100%, 0 100%);
+  }
+
+  .calendar-rings {
+    background-image: radial-gradient(circle, #1f2937 2px, transparent 2px);
+    background-size: 22px 12px;
+    background-repeat: repeat-x;
+    background-position: center top;
+  }
+}
